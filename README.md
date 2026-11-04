@@ -1,4 +1,4 @@
-# LLM-with-classes
+# LLM-Resultant
 🇬🇧
 ## The idea is simple:
 
