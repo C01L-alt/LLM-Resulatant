@@ -1,8 +1,5 @@
 
 from ollama import chat
-
-# Класс с LLM
-
 class Ai:
 
     def __init__(self, question, result_model, prompt, *model):
@@ -25,10 +22,7 @@ class Ai:
             counter += 1
             print(counter)
         return answer
-
-    
-
-# Класс работы с результатами ответов LLMs 
+ 
 
 class Ai_Use(Ai):
 
@@ -46,9 +40,9 @@ class Ai_Use(Ai):
 
 def testing():
 
-    # Аргументация: 1) Промпт, 2) Модель, которая будет формировать финальный ответ 3) Системный промпт 4) модели
+    # 1) prompt, 2) model that will generate the final answer 3) a sys. prompt 4) models
 
-    a = Ai_Use('Привет', 'gemma3:4b', '', 'gemma3:4b', 'gemma3:4b', 'gemma3:4b', 'gemma3:4b')
+    a = Ai_Use('Привет', 'model', '', 'model', 'model', 'model', 'model')
 
 
 
